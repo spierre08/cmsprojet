@@ -1,0 +1,259 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: Poppins Light, sans-serif;
+}
+body{
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	height: 100vh;
+	background: #e4dede;
+}
+.container{
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	height: 600px;
+	width: 500px;
+	background: #fff;
+	border-radius: 8px;
+}
+.container .profil{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 10px;
+	width: 500px;
+	border-bottom: 1px solid #000;
+}
+.container .profil span{
+	font-size: 15px;
+	font-weight: 600;
+}
+
+.container a{
+	padding: 4px 8px;
+	background: #000;
+	color: #fff;
+	text-decoration: none;
+	border-radius: 6px;
+	font-weight: 600;
+	font-size: 14px;
+}
+.container .message{
+	min-width: 480px;
+	min-height: 400px;
+	max-height: 450px;
+	margin-top: 8px;
+	border-radius: 8px;
+	overflow:auto;
+	margin: 10px;
+}
+.container .message::-webkit-scrollbar{
+	width: 0;
+}
+.container .message .message_send{
+	padding: 8px;
+	width: 280px;
+	border-radius: 8px;
+	margin-bottom: 15px;
+}
+.container .message .message_send p{
+	word-break: break-all;
+	font-size: 14px;
+}
+.container .message .message_send span{
+	font-size: 15px;
+	font-weight: 600;
+}
+.container .message .own_message{
+	border: 1px solid #000;
+	float: left;
+}
+.container .message .your_message{
+	border: 1px solid #e4dede;
+	float: right;
+}
+.container .message strong{
+	font-size: 13px;
+}
+.container .espace{
+	min-width: 480px;
+	min-height: 400px;
+	max-height: 450px;
+	margin-top: 8px;
+	border-radius: 8px;
+	overflow: auto;
+	margin: 10px;
+}
+.container .espace .utilisateur{
+	background: #eeecec;
+	color: #000;
+	padding: 10px;
+	border-radius: 8px;
+	margin-bottom: 15px;
+}
+.container .groupe{
+	border-top: 1px solid #000;
+	padding: 10px;
+	width: 500px;
+	display: flex;
+	align-items: center;
+	justify-content:space-between
+}
+.container form{
+	display: flex;
+	flex-direction: column;
+	padding: 10px;
+	width: 500px;
+	border-top: 1px solid #000;
+}
+.container form textarea{
+	outline: none;
+	resize: none;
+	border: 1px solid #000;
+	border-radius: 6px;
+	height: 60px;
+}
+.container form textarea::placeholder{
+	padding: 4px;
+}
+.container form input{
+	padding: 10px;
+	margin-top: 4px;
+	width: 100%;
+	border-radius: 6px;
+	background: #000;
+	color: #fff;
+	font-weight: 600;
+	border: 0;
+	cursor: pointer;
+}
+#email{
+	color: #000;
+	font-weight: 600;
+}
+/* ================= inscription css ============== */
+#inscription{
+	display: flex;
+	flex-direction: column;
+	background: #fff;
+	padding: 15px;
+	margin: 10px;
+	border-radius: 6px;
+}
+#inscription input{
+	padding: 4px 8px;
+	margin: 4px;
+	border-radius: 4px;
+	border: 1px solid;
+}
+#inscription input[type="submit"]{
+	background: #000;
+	color: #fff;
+	font-weight: 600;
+}
+#inscription p a{
+	font-weight: 600;
+}
+#Erreur{
+	color: red;
+	font-weight: 600;
+}
+#Succes{
+	color: green;
+	font-weight: 600;
+}
+#google{
+	text-align: center;
+}
+@media screen and (max-width: 980px) {
+	.container{
+		width: 340px;
+	}
+	.container .profil{
+		width: 340px;
+	}
+	.container .profil span{
+		font-size: 13px;
+	}
+	.container form{
+		width: 340px;
+	}
+	.container .message{
+		min-width: 400px;
+		min-height: 400px;
+		max-height: 350px;
+	}
+	.container .message .message_send{
+		padding: 6px;
+		width: 180px;
+	}
+	.container .message .own_message{
+		float: left;
+		margin-left: 40px;
+	}
+	.container .message .your_message{
+		float: right;
+		margin-right: 40px;
+	}
+	.container .message .message_send p{
+		font-size: 12px;
+	}
+	.container .message .message_send span{
+		font-size: 13px;
+	}
+	.container form input{
+		padding: 8px;
+	}
+}
+@media screen and (max-width: 780px){
+	body{
+		position: absolute;
+		top : 0;
+		left: 0;
+		transform: translate(50,50);
+	}
+}
+@media screen and (max-width: 420px){
+	body{
+		position: absolute;
+		top : 0;
+		left: 0;
+		transform: translate(50,50);
+	}
+	.container{
+		width: 300px;
+	}
+	.container a{
+		padding: 4px 8px;
+		font-weight: 600;
+		font-size: 10px;
+	}
+	.container .profil{
+		width: 300px;
+	}
+	.container form{
+		width: 300px;
+	}
+	.container .message{
+		min-width: 340px;
+		min-height: 400px;
+	}
+	.container .message .message_send{
+		padding: 8px;
+		margin-bottom: 10px;
+	}	
+	#inscription{
+		padding: 13px;
+		margin: 8px;
+	}
+	#inscription input{
+		padding: 4px 8px;
+		margin: 2px;
+	}
+}
